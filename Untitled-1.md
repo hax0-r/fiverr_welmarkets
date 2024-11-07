@@ -1,4 +1,3 @@
-https://www.weltrade.com/education/account/
 
 https://www.weltrade.com/partners/
 
@@ -9,8 +8,9 @@ https://www.weltrade.com/trading/type_account/
 https://www.weltrade.com/trading/tools/
 
 
-
 Done
+
+https://www.weltrade.com/education/account/
 
 https://www.weltrade.com/company/news/
 
