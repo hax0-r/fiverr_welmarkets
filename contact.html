@@ -21,6 +21,7 @@
     <link rel="preload" href="js/config-theme.js" as="script">
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
     <!-- uikit -->
     <script src="js/vendors/uikit.min.js"></script>
     <!-- favicon -->
@@ -126,56 +127,108 @@
     </header>
     <!-- header end -->
 
-    <div class="p-5">
+    <div class="p-5 py-16 max-w-6xl w-full mx-auto">
 
-        <div class="flex max-w-6xl w-full mx-auto items-center justify-center lg:gap-0 gap-10 lg:flex-row flex-col py-16">
-            <div class="md:max-w-[50%] w-full">
-                <h2 class="md:text-5xl  text-3xl text-[#c89b42] font-semibold">The most common questions</h2>
-                <div class="flex items-center justify-center gap-3 mt-8 lg:flex-row flex-col">
-                    <input type="text" placeholder="Search..." class="w-full px-3 py-3.5 border border-zinc-400 rounded-lg">
-                    <button class="px-14 text-white py-[13px] bg-[#c89b42] rounded-lg border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300 hover:bg-transparent w-full lg:w-auto hover:text-[#c89b42]">Search</button>
-                </div>
+        <h1 class="text-center font-bold md:text-5xl text-3xl tracking-wide">Friendly Support Team</h1>
+        <p class="text-center text-lg pt-4">Please contact us in the way most convenient for you. We are working 24/7
+        </p>
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto py-14 w-full gap-5">
+            <div class="w-full p-7 rounded-xl myShadow transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/helpCenter/category-registration.png" class="h-28 mx-auto" alt="">
+                <h2 class="text-center font-medium text-2xl pt-5">Send a Message</h2>
             </div>
-            <div class="md:max-w-[50%] w-full">
-                <img src="./img/helpCenter/iphones.png" class="w-full" alt="">
+            <div class="w-full p-7 rounded-xl myShadow transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/helpCenter/category-registration.png" class="h-28 mx-auto" alt="">
+                <h2 class="text-center font-medium text-2xl pt-5">Send a Message</h2>
+            </div>
+            <div class="w-full p-7 rounded-xl myShadow transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/helpCenter/category-registration.png" class="h-28 mx-auto" alt="">
+                <h2 class="text-center font-medium text-2xl pt-5">Send a Message</h2>
             </div>
         </div>
 
-        <div class="grid max-w-6xl w-full mx-auto lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-1 mx-auto pt-6 w-full gap-5">
 
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+            <div class="w-full text-center ">
+                <h2 class="font-medium text-xl pb-1">General Questions</h2>
+                <a href="mailto:info@weltrade.com" class="hover:underline text-[#c89b42]">info@weltrade.com</a>
             </div>
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+            <div class="w-full text-center ">
+                <h2 class="font-medium text-xl pb-1">General Questions</h2>
+                <a href="mailto:info@weltrade.com" class="hover:underline text-[#c89b42]">info@weltrade.com</a>
             </div>
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+            <div class="w-full text-center ">
+                <h2 class="font-medium text-xl pb-1">General Questions</h2>
+                <a href="mailto:info@weltrade.com" class="hover:underline text-[#c89b42]">info@weltrade.com</a>
             </div>
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+            <div class="w-full text-center ">
+                <h2 class="font-medium text-xl pb-1">General Questions</h2>
+                <a href="mailto:info@weltrade.com" class="hover:underline text-[#c89b42]">info@weltrade.com</a>
             </div>
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+
+        </div>
+
+        <div class="bg-zinc-100 rounded-lg p-5 md:py-20 py-10 my-12 flex items-center justify-center flex-col md:gap-8 gap-5">
+            <h2 class="font-medium md:text-4xl text-2xl text-center">Share your opinion about our service</h2>
+            <button
+                class="md:px-14 px-8 text-white py-[13px] bg-[#c89b42] rounded-full border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300 hover:bg-transparent  hover:text-[#c89b42]">Send
+                opinion </button>
+        </div>
+        <h1 class="text-center font-bold md:text-5xl text-3xl tracking-wide pt-5">Weltrade worldwide </h1>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto md:pt-14 pt-8 w-full gap-5">
+
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
             </div>
-            <div class="border border-[#c89b4279] rounded-lg p-5">
-                <img src="./img/helpCenter/category-registration.png" class="sm:h-28 h-20 mx-auto" alt="">
-                <h3 class="font-medium md:text-2xl text-lg leading-tight pb-2 pt-4">Copy Trading</h3>
-                <p>5 articles</p>
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
+            </div>
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
+            </div>
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
+            </div>
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
+            </div>
+            <div class="w-full flex items-center gap-4 justify-center hover:-translate-y-2 hover:border-zinc-300 border border-white transition-all duration-500 p-5 rounded-lg">
+                <img src="./img/contact/Latvia.png" class="w-24 h-24 rounded-full" alt="">
+                <div class="">
+                    <h2 class="text-xl font-medium pb-1">Latvia</h2>
+                    <p class="leading-tight">Office 320, Audēju street
+                        15-4, Riga, Latvia</p>
+                </div>
             </div>
             
         </div>
-        
+
     </div>
 
     <!-- footer begin -->
