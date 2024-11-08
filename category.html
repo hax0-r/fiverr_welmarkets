@@ -21,7 +21,6 @@
     <link rel="preload" href="js/config-theme.js" as="script">
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/global.css">
     <!-- uikit -->
     <script src="js/vendors/uikit.min.js"></script>
     <!-- favicon -->
@@ -33,8 +32,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
-
     <!-- touch icon -->
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
     <title>Welmarkets - Industry leading platform for trading</title>
@@ -129,225 +126,46 @@
     </header>
     <!-- header end -->
 
-    <div class="p-5 py-16 max-w-6xl w-full mx-auto">
+    <div class="p-5">
 
-        <h1 class="text-center font-bold md:text-5xl text-3xl tracking-wide">Account types
-
-        </h1>
-        <p class="text-center text-lg pt-4">Select an account that best suits your trading strategy</p>
-
-
-        <div class="fastFadeIn">
-            <div class="px-5 py-10 rounded-xl mt-10 overflow-x-auto  lg:block hidden ">
-
-
-                <div class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center pb-4">
-                    <h2 class=""></h2>
-                    <h2 class="text-[#c89b42] opacity-75">for beginners</h2>
-                    <h2 class="text-[#c89b42] opacity-75">Best choice</h2>
-                    <h2 class="text-[#c89b42] opacity-75">For advanced traders</h2>
-                    <h2 class="text-[#c89b42] opacity-75">Suitable for anyone</h2>
-                </div>
-                <div class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center pb-4">
-                    <h2 class="font-medium text-lg">Account type</h2>
-                    <h2 class="font-medium text-3xl">Micro</h2>
-                    <h2 class="font-medium text-3xl">Pro</h2>
-                    <h2 class="font-medium text-3xl">Premium </h2>
-                    <h2 class="font-medium text-3xl">SyntX</h2>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">Account currency</p>
-                    <p>cents USD, cents EUR</p>
-                    <p>USD</p>
-                    <p>USD, EUR</p>
-                    <p>USD</p>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">Starting deposit</p>
-                    <p>cents USD, cents EUR</p>
-                    <p>USD</p>
-                    <p>USD, EUR</p>
-                    <p>USD</p>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">No-commission</p>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">Account currency</p>
-                    <p>100%</p>
-                    <p>100%</p>
-                    <p>100%</p>
-                    <p>100%</p>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">Account currency</p>
-                    <p>10%</p>
-                    <p>10%</p>
-                    <p>10%</p>
-                    <p>10%</p>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">Starting deposit</p>
-                    <p>cents USD, cents EUR</p>
-                    <p>USD</p>
-                    <p>USD, EUR</p>
-                    <p>USD</p>
-                </div>
-                <div
-                    class="grid grid-cols-5 gap-x-2 gap-y-10 text-center items-center justify-center border-b pb-4 mt-10">
-                    <p class="text-black font-medium">No-commission</p>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                    <i class="fa-solid fa-x text-red-500 text-xl"></i>
-                </div>
+        <div class="max-w-7xl w-full mx-auto md:py-24 py-14 rounded-xl bg-zinc-100 p-5">
+            <h2 class="md:text-5xl  text-3xl text-[#c89b42] font-semibold text-center">The most common questions</h2>
+            <div class="flex items-center justify-center gap-3 mt-8 lg:flex-row flex-col max-w-5xl w-full mx-auto">
+                <input type="text" placeholder="Search..."
+                    class="w-full bg-transparent px-3 py-3.5 border border-zinc-400 rounded-lg outline-none">
+                <button
+                    class="px-14 text-white py-[13px] bg-[#c89b42] rounded-lg border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300 hover:bg-transparent w-full lg:w-auto hover:text-[#c89b42]">Search</button>
             </div>
-
         </div>
 
-        <!-- for Mobile -->
-
-        <main class="md:p-5 mt-8 lg:hidden">
-            <div class="flex justify-center items-start my-2">
-                <div class="w-full max-w-6xl my-1">
-                    <ul class="flex flex-col">
-                        <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(1)">
-                            <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                                <div class="flex items-center gap-3">
-                                    <span>Micro</span>
-                                    <span class="font-normal text-xs opacity-70">(For beginners)</span>
-                                </div>
-                                <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
-                            </h2>
-                            <div x-ref="tab" :style="handleToggle()"
-                                class=" overflow-hidden max-h-0 duration-500 transition-all">
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Currency</p>
-                                    <p class="font-medium">USD, EUR, RUB</p>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Service Fee</p>
-                                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Processing Time</p>
-                                    <p>All</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(2)">
-                            <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                                <div class="flex items-center gap-3">
-                                    <span>Pro</span>
-                                    <span class="font-normal text-xs opacity-70">(Best choice)</span>
-                                </div>
-                                <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
-                            </h2>
-                            <div x-ref="tab" :style="handleToggle()"
-                                class=" overflow-hidden max-h-0 duration-500 transition-all">
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Currency</p>
-                                    <p class="font-medium">USD, EUR, RUB</p>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Service Fee</p>
-                                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Processing Time</p>
-                                    <p>All</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(3)">
-                            <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                                <div class="flex items-center gap-3">
-                                    <span>Premium</span>
-                                    <span class="font-normal text-xs opacity-70">(For advanced traders)</span>
-                                </div>
-                                <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
-                            </h2>
-                            <div x-ref="tab" :style="handleToggle()"
-                                class=" overflow-hidden max-h-0 duration-500 transition-all">
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Currency</p>
-                                    <p class="font-medium">USD, EUR, RUB</p>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Service Fee</p>
-                                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Processing Time</p>
-                                    <p>All</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(4)">
-                            <h2 @click="handleClick()"
-                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                                <div class="flex items-center gap-3">
-                                    <span>SyntX</span>
-                                    <span class="font-normal text-xs opacity-70">(Suitable for anyone)</span>
-                                </div>
-                                <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
-                            </h2>
-                            <div x-ref="tab" :style="handleToggle()"
-                                class=" overflow-hidden max-h-0 duration-500 transition-all">
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Currency</p>
-                                    <p class="font-medium">USD, EUR, RUB</p>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Service Fee</p>
-                                    <i class="fa-solid fa-check text-green-500 text-xl"></i>
-                                </div>
-                                <div class="flex gap-3 items-center justify-between p-3 text-black">
-                                    <p>Processing Time</p>
-                                    <p>All</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <div class="max-w-7xl w-full mx-auto md:p-5 flex items-start justify-center md:flex-row flex-col gap-6 mt-8">
+            <div class="md:max-w-[30%] w-full border border-black rounded-xl p-6">
+                <h2 class="text-black font-medium">Categories</h2>
+                <ul class="space-y-4 mt-6">
+                    <li><a href="#" class="transition-all duration-300"> Copy Trading</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Registration</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Trading accounts</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Financial Questions</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Verification</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Company</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Promotions</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Trading</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Partner Program</a></li>
+                    <li><a href="#" class="transition-all duration-300"> Trading Platforms Questions</a></li>
+                </ul>
             </div>
-        </main>
-
-        <div class="flex items-center justify-center mt-10">
-            <button
-                class="md:px-12 px-6 text-white py-[13px] bg-[#c89b42] rounded-full border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300 hover:bg-transparent  hover:text-[#c89b42]">OPEN
-                AN ACCOUNT
-            </button>
+            <div class="md:max-w-[70%] w-full border border-black rounded-xl px-6 py-8">
+                <ul class="space-y-7 text-black font-medium">
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-book text-lg"></i>How long does it take to verify documents?</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-book text-lg"></i>What if one of the documents was rejected?</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-book text-lg"></i>What if the document confirming Selfie was rejected?</li>
+                    <li class="flex items-center gap-4"><i class="fa-solid fa-book text-lg"></i>Where and what documents can I upload?</li>
+                </ul>
+            </div>
         </div>
-
-        <ul class=" mt-16 list-decimal pl-5 space-y-3">
-            <li> the minimum deposit depends on the terms of the payment system.</li>
-            <li>only XAUUSD and XAGUSD are available for MICRO trading accounts.</li>
-            <li>MICRO account type is designed for training purposes. Please open Premium or Pro accounts to enjoy
-                unlimited equity. Transferring funds between accounts is free of charge.</li>
-            <li>Annual dividend rate is calculated daily at 00:00 server time, and paid out weekly.</li>
-            <li>maximum leverage and maximum volume vary for some of SyntX instruments, please check Trading instruments
-                specification for details.</li>
-            <li>MT4 pending orders and positions are counted cumulatively: Micro, Premium - 200 orders or positions, Pro
-                - 250 orders or positions.</li>
-        </ul>
 
 
     </div>
-
 
     <!-- footer begin -->
     <footer>
@@ -497,29 +315,7 @@
 
     <script src="js/utilities.min.js"></script>
     <script src="js/global.js"></script>
-    <script>
-        document.addEventListener('alpine:init', () => {
-            Alpine.store('accordion', {
-                tab: 0
-            });
 
-            Alpine.data('accordion', (idx) => ({
-                init() {
-                    this.idx = idx;
-                },
-                idx: -1,
-                handleClick() {
-                    this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
-                },
-                handleRotate() {
-                    return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
-                },
-                handleToggle() {
-                    return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
-                }
-            }));
-        })
-    </script>
 </body>
 
 </html>
