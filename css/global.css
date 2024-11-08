@@ -67,7 +67,7 @@ img, button, iframe, a {
 }
 
 .fastFadeIn {
-  animation: fadeIn 0.3s;
+  animation: fadeIn 0.5s;
 }
 
 @keyframes fastFadeIn {

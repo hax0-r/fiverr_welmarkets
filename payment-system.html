@@ -33,6 +33,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- faq -->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
     <!-- touch icon -->
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
     <title>Welmarkets - Industry leading platform for trading</title>
@@ -131,88 +133,244 @@
 
         <h1 class="text-center font-bold md:text-5xl text-3xl tracking-wide">Deposit and Withdrawal of Funds
         </h1>
-        <p class="text-center text-lg pt-4">Deposit to your account or withdraw funds easily using the payment method that’s most convenient for you
+        <p class="text-center text-lg pt-4">Deposit to your account or withdraw funds easily using the payment method
+            that’s most convenient for you
         </p>
 
         <div class="grid md:grid-cols-4 grid-cols-2 mx-auto py-14 w-full md:gap-5 gap-3">
             <div class="w-full p-3 rounded-xl myShadow transition-all md:py-10 py-6 duration-500 hover:-translate-y-4">
                 <img src="./img/helpCenter/category-registration.png" class="md:h-28 h-20 mx-auto" alt="">
                 <h2 class="text-center font-bold md:text-3xl text-xl leading-tight md:pt-5 pt-3">0%</h2>
-                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading without the risk of
+                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading
+                    without the risk of
                     losing capital</h2>
             </div>
             <div class="w-full p-3 rounded-xl myShadow transition-all md:py-10 py-6 duration-500 hover:-translate-y-4">
                 <img src="./img/helpCenter/category-registration.png" class="md:h-28 h-20 mx-auto" alt="">
                 <h2 class="text-center font-bold md:text-3xl text-xl leading-tight md:pt-5 pt-3">0%</h2>
-                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading without the risk of
+                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading
+                    without the risk of
                     losing capital</h2>
             </div>
             <div class="w-full p-3 rounded-xl myShadow transition-all md:py-10 py-6 duration-500 hover:-translate-y-4">
                 <img src="./img/helpCenter/category-registration.png" class="md:h-28 h-20 mx-auto" alt="">
                 <h2 class="text-center font-bold md:text-3xl text-xl leading-tight md:pt-5 pt-3">0%</h2>
-                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading without the risk of
+                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading
+                    without the risk of
                     losing capital</h2>
             </div>
             <div class="w-full p-3 rounded-xl myShadow transition-all md:py-10 py-6 duration-500 hover:-translate-y-4">
                 <img src="./img/helpCenter/category-registration.png" class="md:h-28 h-20 mx-auto" alt="">
                 <h2 class="text-center font-bold md:text-3xl text-xl leading-tight md:pt-5 pt-3">0%</h2>
-                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading without the risk of
+                <h2 class="text-center font-medium md:text-lg leading-tight text-xs md:pt-3 pt-1">Practice trading
+                    without the risk of
                     losing capital</h2>
             </div>
         </div>
-     
+
         <div class="flex items-center justify-center gap-3 mt-14">
-            <button class="bg-zinc-100 rounded-full px-7 py-3 font-medium transition-all duration-500">Deposit</button>
-            <button class=" rounded-full px-7 py-3 font-medium transition-all duration-500">Withdrawal</button>
+            <button id="depositBtn"
+                class="bg-zinc-100 rounded-full px-7 py-3 font-medium transition-all duration-300">Deposit</button>
+            <button id="witthDrawBtn"
+                class=" rounded-full px-7 py-3 font-medium transition-all duration-300">Withdrawal</button>
         </div>
 
-        <div class="myShadow px-5 py-10 rounded-xl mt-10 border overflow-x-auto lg:block hidden ">
 
-            <h2 class="font-medium md:text-4xl text-2xl text-center ">How to Deposit Account</h2>
+        <div class="fastFadeIn" id="deposit">
+            <div class="myShadow px-5 py-10 rounded-xl mt-10 border overflow-x-auto  lg:block hidden ">
 
-            <div class="grid grid-cols-5 gap-x-2 gap-y-5 mt-14 text-center items-center justify-center">
-                <h2 class="font-medium text-lg">Deposit method</h2>
-                <h2 class="font-medium text-lg">Name</h2>
-                <h2 class="font-medium text-lg">Currency</h2>
-                <h2 class="font-medium text-lg">Service Fee	</h2>
-                <h2 class="font-medium text-lg">Processing Time</h2>
+                <h2 class="font-medium md:text-4xl text-2xl text-center ">How to Deposit Account</h2>
 
-                <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
-                <p>VISA/MASTERCARD</p>
-                <p>USD, EUrR, RUB</p>
-                <p class="text-[#c89b42] font-bold text-lg">0%</p>
-                <p>instantaneously</p>
+                <div class="grid grid-cols-5 gap-x-2 gap-y-5 mt-14 text-center items-center justify-center">
+                    <h2 class="font-medium text-lg">Deposit method</h2>
+                    <h2 class="font-medium text-lg">Name</h2>
+                    <h2 class="font-medium text-lg">Currency</h2>
+                    <h2 class="font-medium text-lg">Service Fee </h2>
+                    <h2 class="font-medium text-lg">Processing Time</h2>
 
-                <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
-                <p>VISA/MASTERCARD</p>
-                <p>USD, EUrR, RUB</p>
-                <p class="text-[#c89b42] font-bold text-lg">0%</p>
-                <p>instantaneously</p>
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
 
-                <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
-                <p>VISA/MASTERCARD</p>
-                <p>USD, EUrR, RUB</p>
-                <p class="text-[#c89b42] font-bold text-lg">0%</p>
-                <p>instantaneously</p>
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
 
-                <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
-                <p>VISA/MASTERCARD</p>
-                <p>USD, EUrR, RUB</p>
-                <p class="text-[#c89b42] font-bold text-lg">0%</p>
-                <p>instantaneously</p>
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
 
-                <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
-                <p>VISA/MASTERCARD</p>
-                <p>USD, EUrR, RUB</p>
-                <p class="text-[#c89b42] font-bold text-lg">0%</p>
-                <p>instantaneously</p>
-                
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                </div>
+
             </div>
-            
+
+            <!-- for Mobile -->
+
+            <main class="md:p-5 mt-8 lg:hidden">
+                <div class="flex justify-center items-start my-2">
+                    <div class="w-full max-w-6xl my-1">
+                        <h2 class="text-xl font-semibold text-vnet-blue mb-2">Deposit method</h2>
+                        <ul class="flex flex-col">
+                            <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(1)">
+                                <h2 @click="handleClick()"
+                                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="./img/paymentSystem/card.png" class="h-10" alt="">
+                                        <span>VISA/MASTERCARD</span>
+                                    </div>
+                                    <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
+                                </h2>
+                                <div x-ref="tab" :style="handleToggle()"
+                                    class=" overflow-hidden max-h-0 duration-500 transition-all">
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Currency</p>
+                                        <p class="font-medium">USD, EUR, RUB</p>
+                                    </div>
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Service Fee</p>
+                                        <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                                    </div>
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Processing Time</p>
+                                        <p>instantaneously</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
         </div>
 
+
+        <div class="hidden fastFadeIn" id="withDraw">
+            <div class="myShadow px-5 py-10 rounded-xl mt-10 border overflow-x-auto  lg:block hidden ">
+
+                <h2 class="font-medium md:text-4xl text-2xl text-center ">How to Withdraw Funds</h2>
+
+                <div class="grid grid-cols-5 gap-x-2 gap-y-5 mt-14 text-center items-center justify-center">
+                    <h2 class="font-medium text-lg">Deposit method</h2>
+                    <h2 class="font-medium text-lg">Name</h2>
+                    <h2 class="font-medium text-lg">Currency</h2>
+                    <h2 class="font-medium text-lg">Service Fee </h2>
+                    <h2 class="font-medium text-lg">Processing Time</h2>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                    <img src="./img/paymentSystem/card.png" class="h-16 mx-auto" alt="">
+                    <p>VISA/MASTERCARD</p>
+                    <p>USD, EUrR, RUB</p>
+                    <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                    <p>instantaneously</p>
+
+                </div>
+
+            </div>
+
+            <!-- for Mobile -->
+
+            <main class="md:p-5 mt-8 lg:hidden">
+                <div class="flex justify-center items-start my-2">
+                    <div class="w-full max-w-6xl my-1">
+                        <h2 class="text-xl font-semibold text-vnet-blue mb-2">Withdraw method</h2>
+                        <ul class="flex flex-col">
+                            <li class="bg-white my-2 border-b border-zinc-300" x-data="accordion(1)">
+                                <h2 @click="handleClick()"
+                                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
+                                    <div class="flex items-center gap-3">
+                                        <img src="./img/paymentSystem/card.png" class="h-10" alt="">
+                                        <span>VISA/MASTERCARD</span>
+                                    </div>
+                                    <i :class="handleRotate()" class="fa-solid fa-angle-down transition-all"></i>
+                                </h2>
+                                <div x-ref="tab" :style="handleToggle()"
+                                    class=" overflow-hidden max-h-0 duration-500 transition-all">
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Currency</p>
+                                        <p class="font-medium">USD, EUR, RUB</p>
+                                    </div>
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Service Fee</p>
+                                        <p class="text-[#c89b42] font-bold text-lg">0%</p>
+                                    </div>
+                                    <div class="flex gap-3 items-center justify-between p-3 text-black">
+                                        <p>Processing Time</p>
+                                        <p>instantaneously</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <p class="text-center mt-16 max-w-5xl w-full mx-auto">The time term of adding funds to your account balance at
+            payment system depends on internal terms of funds
+            transfer at payment system (or processing center). The payment processing on its side can take from several
+            minutes to few hours.
+            <br><br>
+            The Company reserves the right to change the withdrawal fee in case of high volatility of the
+            cryptocurrency.
+            <br><br>
+            Services are provided by Systemgates Ltd. Company Systemgates Ltd. registered by the Financial Services
+            Authority (FSA) of Saint Vincent and the Grenadines under number 24513 IBC 2018.
+            <br><br>
+            <span class="text-zinc-400">
+                Cooperation with the payment service providers on the website is carried out by SOFIAN TE LP. Company
+                address: Office 29, Clifton House, Fitzwilliam Street Lower, Dublin 2, Republic of Ireland/ Office 320,
+                Audéju street 15-4, Riga, Latvia, email: support@sofiante.com
+            </span>
+        </p>
+
+        <div class="flex items-center justify-center mt-10">
+            <button
+                class="md:px-12 px-6 text-white py-[13px] bg-[#c89b42] rounded-full border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300 hover:bg-transparent  hover:text-[#c89b42]">OPEN AN ACCOUNT
+            </button>
+        </div>
 
     </div>
+
 
     <!-- footer begin -->
     <footer>
@@ -362,6 +520,56 @@
 
     <script src="js/utilities.min.js"></script>
     <script src="js/global.js"></script>
+
+    <script>
+
+        const withDraw = document.getElementById("withDraw")
+        const deposit = document.getElementById("deposit")
+        const witthDrawBtn = document.getElementById("witthDrawBtn")
+        const depositBtn = document.getElementById("depositBtn")
+
+        depositBtn.addEventListener('click', () => {
+            deposit.classList.add('block')
+            deposit.classList.remove('hidden')
+            withDraw.classList.add('hidden')
+            withDraw.classList.remove('block')
+            depositBtn.classList.add('bg-zinc-100')
+            witthDrawBtn.classList.remove('bg-zinc-100')
+        })
+        witthDrawBtn.addEventListener('click', () => {
+            deposit.classList.add('hidden')
+            deposit.classList.remove('block')
+            withDraw.classList.remove('hidden')
+            withDraw.classList.add('block')
+            depositBtn.classList.remove('bg-zinc-100')
+            witthDrawBtn.classList.add('bg-zinc-100')
+        })
+
+
+
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('accordion', {
+                tab: 0
+            });
+
+            Alpine.data('accordion', (idx) => ({
+                init() {
+                    this.idx = idx;
+                },
+                idx: -1,
+                handleClick() {
+                    this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+                },
+                handleRotate() {
+                    return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+                },
+                handleToggle() {
+                    return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+                }
+            }));
+        })
+    </script>
 
 </body>
 
