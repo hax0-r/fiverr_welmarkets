@@ -35,6 +35,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- touch icon -->
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Welmarkets - Industry leading platform for trading</title>
 </head>
 
@@ -51,6 +52,17 @@
         background-color: #c89b42;
         border-radius: 50%;
         cursor: pointer;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
@@ -144,7 +156,7 @@
     <!-- header end -->
 
 
-    <div class="bgPartners p-5 py-16 -mt-7">
+    <div class="bg-gradient-to-r from-[#7c612b] to-[#c89b42] p-5 py-16 -mt-7">
 
         <div class="flex items-center justify-between max-w-6xl mx-auto gap-5 md:flex-row flex-col">
             <div class="w-full md:max-w-[60%]">
@@ -230,14 +242,14 @@
 
         <div class="flex items-center justify-center mt-20">
             <h2
-                class="px-12 mx-auto py-4 rounded-xl bg-gradient-to-r from-[#a27e36] to-[#c89b42] inline font-bold md:text-5xl text-3xl text-white">
+                class="px-12 mx-auto py-4 rounded-xl bg-gradient-to-r from-[#a27e36] to-[#c89b42] inline font-bold md:text-5xl text-3xl text-white text-center">
                 Partner with Us</h2>
         </div>
         <h2
             class="md:text-5xl text-3xl font-bold text-center !leading-tight bg-gradient-to-r from-[#58431a]  to-[#c89b42] text-transparent bg-clip-text mt-10">
             Partner Program Highlights</h2>
 
-        <div class="grid md:grid-cols-3 grid-cols-1 mx-auto md:pt-14 pt-8 w-full gap-5 justify-center items-center">
+        <div class="grid md:grid-cols-3 grid-cols-1 mx-auto md:pt-14 pt-8 w-full md:gap-5 gap-3 justify-center items-center">
             <div class="rounded-xl bg-gradient-to-r from-[#a27e36] md:py-14 to-[#c89b42] w-full md:col-span-2 p-7">
                 <h2 class="text-white font-bold md:text-6xl text-3xl">1000</h2>
                 <p class="font-medium text-[#ffffffc4] text-xl pt-3">Partners WorldWide</p>
@@ -276,12 +288,12 @@
         <div class="bg-white p-10 rounded-xl mt-10 max-w-5xl mx-auto myShadow w-full">
             <div class="flex justify-between items-center mb-8">
                 <div>
-                    <h2 class="text-lg font-semibold">I want to earn</h2>
+                    <h2 class="md:text-lg md:font-semibold">I want to earn</h2>
                     <p class="md:text-6xl text-3xl pt-3 font-bold text-[#c89b42]"><span id="earnings">$15,000</span></p>
                     <p class="text-gray-500">per month</p>
                 </div>
                 <div class="text-right">
-                    <h2 class="text-lg font-semibold">Need to attract</h2>
+                    <h2 class="md:text-lg md:font-semibold">Need to attract</h2>
                     <p class="md:text-6xl text-3xl pt-3 font-bold  text-black"><span id="clients">150</span></p>
                     <p class="text-gray-500">clients</p>
                 </div>
@@ -295,7 +307,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between text-gray-700 mt-6 items-center text-sm">
+            <div class="md:flex justify-between text-gray-700 mt-6 items-center text-sm hidden">
                 <span>$0</span>
                 <span>$5,000</span>
                 <span>$10,000</span>
@@ -335,7 +347,7 @@
 
             <div class="">
                 <div class="flex items-center  glass p-3 rounded-xl justify-center gap-4">
-                    <h2 class="font-medium text-xl">Standard</h2>
+                    <h2 class="font-medium text-2xl">Standard</h2>
                     <img src="./img/partners/standard-partner.png" class="h-16" alt="">
                 </div>
                 <div class="h-72 bg-gradient-to-r -mt-3 from-[#a27e36] p-7 md:py-14 to-[#c89b42] rounded-xl">
@@ -346,7 +358,7 @@
 
             <div class="">
                 <div class="flex items-center  glass p-3 rounded-xl justify-center gap-4">
-                    <h2 class="font-medium text-xl">Professional</h2>
+                    <h2 class="font-medium text-2xl">Professional</h2>
                     <img src="./img/partners/standard-partner.png" class="h-16" alt="">
                 </div>
                 <div class="h-96 bg-gradient-to-r -mt-3 from-[#a27e36] p-7 md:py-14 to-[#c89b42] rounded-xl">
@@ -357,7 +369,7 @@
 
             <div class="">
                 <div class="flex items-center  glass p-3 rounded-xl justify-center gap-4">
-                    <h2 class="font-medium text-xl">Expert</h2>
+                    <h2 class="font-medium text-2xl">Expert</h2>
                     <img src="./img/partners/expert-partner.png" class="h-16" alt="">
                 </div>
                 <div class="h-[30rem] bg-gradient-to-r -mt-3 from-[#a27e36] p-7 md:py-14 to-[#c89b42] rounded-xl">
@@ -365,7 +377,198 @@
                     <p class="text-[#fffc] font-medium pt-3">of average spread</p>
                 </div>
             </div>
-            
+
+        </div>
+
+        <h2
+            class="md:text-5xl text-3xl font-bold text-center !leading-tight bg-gradient-to-r from-[#58431a]  to-[#c89b42] text-transparent bg-clip-text mt-20">
+            Program Benefits
+        </h2>
+
+
+
+        <div
+            class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto py-14 w-full gap-5 justify-center items-center">
+            <div class="w-full h-full p-7 rounded-xl border transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/partners/percentage.png" class="h-24 mx-auto" alt="">
+                <p class=" pt-7 text-center">Earn a percentage of the profits generated by your direct referrals. </p>
+            </div>
+            <div class="w-full h-full p-7 rounded-xl border transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/partners/dollar.png" class="h-24 mx-auto" alt="">
+                <p class=" pt-7 text-center">Receive additional bonuses based on the performance of affiliates recruited
+                    by
+                    your referrals. </p>
+            </div>
+            <div class="w-full h-full p-7 rounded-xl border transition-all md:py-16 duration-500 hover:-translate-y-4">
+                <img src="./img/partners/network.png" class="h-24 mx-auto" alt="">
+                <p class=" pt-7 text-center">Build a flexible network and watch your income grow exponentially. </p>
+            </div>
+        </div>
+
+
+        <div class="rounded-xl bg-zinc-100 p-8 flex justify-center md:flex-row flex-col md:py-16">
+            <div class="md:max-w-[40%] w-full flex flex-col justify-between">
+                <h2
+                    class="md:text-5xl text-3xl font-bold !leading-tight bg-gradient-to-r from-[#58431a]  to-[#c89b42] text-transparent bg-clip-text ">
+                    How it works
+                </h2>
+                <div class="">
+                    <button
+                        class="md:px-20 w-full md:w-auto mb-10 md:mb-0 mt-7 md:mt-0 px-6 text-white py-[13px] bg-[#c89b42] rounded-xl border-2 border-[#c89b42] text-lg font-medium tracking-wide transition-all duration-300  hover:bg-transparent  hover:text-[#c89b42]">Try
+                        Now
+                    </button>
+                </div>
+            </div>
+            <div class="md:max-w-[60%] w-full">
+                <ul class="pl-5 text-lg list-decimal space-y-10">
+                    <li> Your direct referrals become your first level, and you earn a percentage of their earnings.
+                    </li>
+
+                    <li> As they bring in new partners, those individuals become your second level, and you continue to
+                        earn from their efforts as well.</li>
+
+                    <li>Build a flexible network and watch your income grow exponentially.</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <p class="text-xl text-center mt-10">A multi-level program is available upon request. To participate in a
+            multi-level program, a partner should send a request to the Company Support Team.
+        </p>
+
+        <h2
+            class="md:text-5xl text-3xl font-bold text-center !leading-tight bg-gradient-to-r from-[#58431a]  to-[#c89b42] text-transparent bg-clip-text mt-20">
+            Customer testimonials
+        </h2>
+
+        <div class="mt-10">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide ">
+                        <div class="bg-zinc-50 rounded-xl p-5">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                            </div>
+                            <p class="pt-5">Great broker! I have been using
+                                Weltrade for several years and am
+                                completely satisfied. Fast
+                                withdrawals, 24/7 support, a
+                                convenient platform, and high-quality
+                                educational materials. I recommend it
+                                to anyone looking for a reliable broker!</p>
+
+                                <div class="flex items-center gap-4 mt-5">
+                                    <img src="./img/partners/client.png" class="h-14" alt="">
+                                    <div class="">
+                                        <h2 class="text-xl font-medium">M Talha</h2>
+                                        <p>11 June 2023</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-zinc-50 rounded-xl p-5">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                            </div>
+                            <p class="pt-5">Great broker! I have been using
+                                Weltrade for several years and am
+                                completely satisfied. Fast
+                                withdrawals, 24/7 support, a
+                                convenient platform, and high-quality
+                                educational materials. I recommend it
+                                to anyone looking for a reliable broker!</p>
+
+                                <div class="flex items-center gap-4 mt-5">
+                                    <img src="./img/partners/client.png" class="h-14" alt="">
+                                    <div class="">
+                                        <h2 class="text-xl font-medium">M Talha</h2>
+                                        <p>11 June 2023</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-zinc-50 rounded-xl p-5">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                            </div>
+                            <p class="pt-5">Great broker! I have been using
+                                Weltrade for several years and am
+                                completely satisfied. Fast
+                                withdrawals, 24/7 support, a
+                                convenient platform, and high-quality
+                                educational materials. I recommend it
+                                to anyone looking for a reliable broker!</p>
+
+                                <div class="flex items-center gap-4 mt-5">
+                                    <img src="./img/partners/client.png" class="h-14" alt="">
+                                    <div class="">
+                                        <h2 class="text-xl font-medium">M Talha</h2>
+                                        <p>11 June 2023</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="bg-zinc-50 rounded-xl p-5">
+                            <div class="flex items-center gap-1">
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                                <i class="fa-solid fa-star text-green-500 text-xl"></i>
+                            </div>
+                            <p class="pt-5">Great broker! I have been using
+                                Weltrade for several years and am
+                                completely satisfied. Fast
+                                withdrawals, 24/7 support, a
+                                convenient platform, and high-quality
+                                educational materials. I recommend it
+                                to anyone looking for a reliable broker!</p>
+
+                                <div class="flex items-center gap-4 mt-5">
+                                    <img src="./img/partners/client.png" class="h-14" alt="">
+                                    <div class="">
+                                        <h2 class="text-xl font-medium">M Talha</h2>
+                                        <p>11 June 2023</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-xl bg-gradient-to-r from-[#58431a]  to-[#c89b42] mt-20 p-8 md:py-16">
+
+            <div class="lg:max-w-[80%] w-full ">
+                <h2 class="md:text-5xl text-3xl text-white font-bold">Unlock Partner Profits with Copy Trading</h2>
+                <p class="py-8 text-[#ffffffde]">With our Partner Program, your earning potential goes beyond direct
+                    referrals. By introducing Copy trading to your network, you unlock a new avenue of profitability. As
+                    your clients embrace Copy trading, you not only earn from their trades but also from the trading
+                    activities of their own network. It's a seamless integration that creates a dynamic ecosystem of
+                    earning, ensuring your success is not limited by boundaries.</p>
+                <button
+                    class="md:px-20 px-6 hover:text-[#c89b42] py-[13px] hover:bg-[#fff] rounded-xl border-2 border-[#fff] text-lg font-medium tracking-wide transition-all duration-300  bg-transparent  text-[#fff]">Create
+                    free demo account
+
+                </button>
+            </div>
+
         </div>
 
     </div>
@@ -515,6 +718,7 @@
     </a>
     <!-- to top end -->
     <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 
     <script src="js/utilities.min.js"></script>
@@ -531,6 +735,32 @@
             earningsElement.textContent = `$${earnings.toLocaleString()}`;
             clientsElement.textContent = clients;
         });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                640: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                }
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            loop: true,
+        });
+
     </script>
 
 </body>
